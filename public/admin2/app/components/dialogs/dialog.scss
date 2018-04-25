@@ -1,0 +1,28 @@
+.content{
+    padding:24px;
+    width:100%; 
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 65vh;
+}
+.dialog{
+    @media (max-width: 650px) {
+        width:100%;
+    }
+    width:71%;
+}
+.title{
+    background-color: rgb(50,50,50);
+    color: #ffffff;
+    padding:24px;
+}
+.body{
+    padding:0px;
+
+}
+
+.dialogMsg{
+    color: red;
+    font-style: italic;
+}
+

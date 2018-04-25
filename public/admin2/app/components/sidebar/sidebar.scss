@@ -1,0 +1,48 @@
+.sidebar{
+    @media (max-width: 1200px) {
+        position:absolute;
+        left:0px;
+        z-index:200;
+    }
+    max-width:310px;
+    position:relative;
+    display:none;
+}
+.navigation{
+    background-color: #ffffff;
+}
+.card{
+    background-color: rgb(50,50,50);
+    position:relative;
+}
+
+.title{
+    font-size:1.2em!important;
+    color:#ffffff;
+    font-weight:bold;
+}
+.subtitle{
+    color:#ffffff!important;
+    font-size:1.2em!important;
+} 
+.closeIcon{
+    position: absolute;
+    right: 0px;
+    font-size: 1.7em;
+    color: #ffffff;
+    padding: 25px;
+    cursor: pointer;
+}
+
+.unselectedLink{
+    text-decoration: none;
+}
+
+.selected .itemText{
+    color:rgb(255,0,150)!important;
+    font-weight:bold; 
+}
+
+.selected .itemAction > [data-react-toolbox='font-icon']{
+    color:rgb(255,0,150)!important;
+}

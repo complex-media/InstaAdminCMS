@@ -1,0 +1,13 @@
+.builderButtons{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    margin-bottom:10px;
+}
+
+.builderCanvasContainer{
+    @media (max-width: 650px) {
+        height:65vh !important;
+        overflow:hidden;
+    }
+}

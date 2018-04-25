@@ -1,0 +1,203 @@
+.sortUl{
+    list-style-type:none;
+    @media (max-width: 650px) {
+        padding:0px 30px 0px 0px;
+    }
+    padding:0px 30px 0px 0px;
+    width:100%;
+    overflow-y:auto;
+    max-height:75vh;
+    width: 100%;
+}
+.sortLi{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    padding: 0px;
+    margin: 0px 0px;
+}
+.dragHandle{
+    cursor:move;
+    padding:0px 10px;
+}
+.nodeContainterTitle{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    padding: 24px 10px 24px 10px;
+    font-size:1.2em;
+    background-color: #efefef;
+}
+.nodeContainterTitleSelected{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    padding: 24px 10px 24px 10px;
+    font-size:1.2em;
+    background-color: rgb(255, 0, 150);
+}
+.nodeContainterTitleLeft{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    text-decoration: none;
+    color:#222222;
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+.nodeContainer{
+    padding:0px;
+    width:100%;
+    margin: 0px 0px 10px 0px;
+}
+.nodeContainterInput{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    @media (max-width: 650px) {
+        padding: 3px 20px;
+    }
+    padding: 24px 10px 24px 10px;
+    position: relative;
+    background-color: #f7f7f7;
+}
+
+.nodeContainterInputAlert{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    @media (max-width: 650px) {
+        padding: 3px 20px;
+    }
+    padding: 24px 10px 24px 10px;
+    position: relative;
+    background-color: #f7f7f7;
+    border: 1px solid red;
+}
+
+.compListNode{
+    font-size:1em;
+    padding:0px 5px;
+}
+
+.compListNodeLink{
+    text-decoration: none;
+    color:#222222;
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-style: italic;
+}
+
+.elementNode{
+    display:flex;
+    flex-direction:row;
+    @media (max-width: 650px) {
+        width:100%;
+    }
+    width:100%;
+}
+.containerMsg{
+    display:flex;
+    flex-direction:row;
+    padding:20px 0px 20px 10px;
+}
+.update{
+    color:red;
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-style: italic;
+}
+.newData{
+    color:gray;
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-style: italic;
+} 
+.sortChildrenNodes{
+    padding: 10px 0px; 
+    top: -7px;
+    position: relative;
+    background-color: white;
+}
+.sortChildNode{
+    display:flex;
+    @media (max-width: 650px) {
+         padding: 3px 20px;
+    }
+    padding: 5px 80px; 
+    flex-direction:row;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+.sortChildNodeComp{
+    display:flex;
+    @media (max-width: 650px) {
+         padding: 3px 10px 3px 20px;
+    }
+    padding: 20px 10px 20px 60px;
+    background-color: #efefef;
+    flex-direction:row;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.builderButtons{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+}
+
+.breadcrumbs{
+    padding: 15px 20px 0px 20px;
+}
+
+.sortChildHeader{
+    background-color: #ff4081;
+    margin: 0px;
+    padding: 24px 50px 24px 24px;
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    color: #ffffff;
+    font-weight:bold;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    font-size:1.2em
+}
+
+.editorWorkspace{
+    display:flex;
+    flex-direction:row;
+    @media (max-width: 650px) {
+        flex-direction:column;
+    }
+    background-color: #d8d8d8;
+    padding:20px 18px;
+}
+
+.sortForms{
+    display:flex;
+    flex-direction:row;
+    width:100%
+}
+
+.sortChildBody{
+    background-color: #ffffff;
+    margin: 0px;
+    padding: 10px;
+}
+
+.sortChildContainer{
+    width:100%;
+    padding:0px 0px 0px 20px;
+}
+
+.sortParentContainer{
+    width:100%;
+    padding:0px 0px 0px 20px;
+    overflow-x:hidden;
+    @media (max-width: 650px) {
+        padding: 0px 0px 0px 0px;
+    }
+
+}

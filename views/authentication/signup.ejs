@@ -1,0 +1,100 @@
+<!-- views/login.ejs -->
+<!doctype html>
+<html>
+<head>
+    <title>Insta Admin Sign Up</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+    <style>
+        body        { padding-top:80px; }
+    </style>
+</head>
+<body>
+<div class="container">
+
+
+<div class="col-sm-6 col-sm-offset-3">
+    <% if(!invalid) { %>
+    <h1><span class="fa fa-sign-in"></span> Sign Up</h1>
+    <% if (messages.length > 0) { %>
+        <div class="alert alert-danger"><%= messages[0] %></div>
+    <% } %>
+    <!-- LOGIN FORM -->
+    <form action="/auth/signup" method="post">
+        <div class="form-group">
+            <label>Email</label>
+            <input type="text" class="form-control" name="email" value="<%= invite.email %>" disabled>
+        </div>
+        <div class="form-group">
+            <label>Role</label>
+            <input type="text" class="form-control" name="role" value="<%= invite.role %>" disabled>
+        </div>
+
+            <input type="hidden" class="form-control" name="email" value="<%= invite.email %>">
+            <input type="hidden" class="form-control" name="token" value="<%= invite.token %>">
+
+        <div class="form-group">
+            <label>Password</label>
+            <input id="pw" type="password" class="form-control" name="password" onkeyup="checkPass(); return false;">
+        </div>
+        <div class="form-group">
+            <label>Confirm Password</label>
+            <input id="pwconf" type="password" class="form-control" name="passwordConfirm" onkeyup="checkPass(); return false;">
+        </div>
+        
+        <button id="signup-btn" type="submit" class="btn btn-info btn-lg" disabled>Sign Up</button><br/><p><span id="errmsg"></span></p>
+        <br/>
+        <p> -- OR -- </p>
+    <a class="btn btn-info btn-lg" href="/auth/signup/oauth?token=<%= invite.token %>">Sign In with Google</a>
+
+    </form>
+    <% } else { %>
+    <h4><%= invalid %></h4>
+    <% }%>
+</div>
+
+</div>
+
+<script type="text/javascript">
+document.getElementById('signup-btn').disabled = true;
+function checkPass()
+{
+    //Store the password field objects into variables ...
+    var pass1 = document.getElementById('pw');
+    var pass2 = document.getElementById('pwconf');
+    var actionbtn = document.getElementById('signup-btn');
+    var message = document.getElementById('errmsg');
+    //Set the colors we will be using ...
+    var goodColor = "#bee9be";
+    var badColor = "#ffb3b3";
+    //Compare the values in the password field 
+    //and the confirmation field
+
+    if(pass1.value == pass2.value){
+        //The passwords match. 
+        //Set the color to the good color and inform
+        //the user that they have entered the correct password 
+        pass1.style.backgroundColor = goodColor;
+        pass2.style.backgroundColor = goodColor;
+        actionbtn.disabled = false;
+        message.innerHTML = "";
+    }else{
+        //The passwords do not match.
+        //Set the color to the bad color and
+        //notify the user.
+        pass2.style.backgroundColor = badColor;
+        actionbtn.disabled = true;
+        message.innerHTML = "Passwords must match";
+    }
+
+    if(!pass1.value.match(new RegExp(/[a-zA-Z0-9]{8,}/))) {
+        actionbtn.disabled = true;
+        pass1.style.backgroundColor = badColor;
+        message.innerHTML = "Password must be 8 characters long and alphanumeric.";
+    }else{
+        pass1.style.backgroundColor = goodColor;
+    }
+}  
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+    "preset": "google",
+    "requireCurlyBraces": false,
+    "requireDotNotation":true,
+    "maximumLineLength": 400,
+    "validateQuoteMarks": false,
+    "jsDoc": {
+        "checkAnnotations": {
+        	"extra": {
+        		"swagger": true
+        	}
+        },
+        "checkParamNames": true,
+        "requireParamTypes": true,
+        "checkRedundantParams": true,
+        "checkReturnTypes": true,
+        "checkRedundantReturns": true,
+        "requireReturnTypes": true,
+        "checkTypes": true,
+        "checkRedundantAccess": true,
+        "requireNewlineAfterDescription": true
+	}
+}

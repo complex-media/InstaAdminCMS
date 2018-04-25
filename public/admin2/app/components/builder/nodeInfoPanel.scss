@@ -1,0 +1,35 @@
+.nodeActionContainer{
+    position:relative;
+    height:60px;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+}
+
+.nodeActionButtons{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: #efefef;
+    margin: 2px 0px;
+    border-radius: 25px 0px 0px 25px;
+}
+.button{
+    margin: 0px 5px;
+    color:rgb(255,0,150)!important;
+}
+.inverse{ 
+    color:rgb(255,255,255)!important;
+    background-color:rgb(255,0,150)!important;
+}
+
+.nodeActionInfo{
+    bottom:60px;
+    position:absolute;
+    background-color: #efefef;
+    padding:10px 10px;
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    color: #777777;
+    border-radius: 10px 0px 0px 10px;
+}

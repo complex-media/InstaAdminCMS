@@ -1,0 +1,21 @@
+{
+	"mongoUri":"mongodb url connection string",
+	"url":"Base url of applicationeg http://instaadmin.local",
+	"adminUrl":"Base ulr of  application for websocket eg http://ws.instaadmin.local",
+	"cdnBase":"CDN base url eg http://cdn.instadmin.local",
+	"S3_BUCKET":"s3 bucket name for resource storage",
+	"S3_ACCESS_KEY_ID":"s3 access key for resource storage",
+	"S3_SECRET_ACCESS_KEY":"s3 secret access key resources storage",
+	"GOOGLE_AUTH_CLIENTID":"google auth client id for google oauth",
+	"GOOGLE_AUTH_CLIENTSECRET":"google auth client secret for googleoauth",
+	"awsSes":{
+		"accessKeyId": "aws simple email service key id",
+		"secretAccessKey": "aws simple email service secret key ",
+		"region": "us-east-1"
+	},
+	"defaultUsers":[
+		{"email":"admin1.instaapp@example.com","password":"anothernightanotherdream","role":"admin"},
+		{"email":"owner1.instaapp@example.com","password":"anothernightanotherdream","role":"owner"},
+		{"email":"user1.instaapp@example.com","password":"anothernightanotherdream","role":"user"}
+	]
+}

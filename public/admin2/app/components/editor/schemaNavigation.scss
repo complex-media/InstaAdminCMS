@@ -1,0 +1,49 @@
+.navContainer{
+    background-color: #eeeeee;
+    height:100%;
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    padding:20px 5px 20px 20px;
+    overflow: hidden;
+    @media (max-width: 650px) {
+        height:200px;
+        margin: 0px 0px 10px 0px;
+    }
+}
+.navContainerClosed{
+    background-color: #eeeeee;
+    width:auto;
+    height:100%;
+    padding:20px;
+    @media (max-width: 650px) {
+        margin: 0px 0px 10px 0px;
+        padding:10px;
+        width:35px;
+    }
+}
+
+.navHeader{
+    font-size:1.1em;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+.navBody{
+    color:#555555;
+    overflow-y:auto;
+    overflow-x:hidden;
+    max-height:70vh;
+    width: 100%;
+    padding-right: 30px;
+}
+
+.navLevelSelected{
+    color:rgb(255,0,150);
+    font-weight:bold;
+    width:100%;
+}   
+
+.navLevel{
+    color:#555555;
+    width:100%;
+}

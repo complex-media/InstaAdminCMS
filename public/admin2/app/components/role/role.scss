@@ -1,0 +1,22 @@
+.userRolesContainer{
+    @media (max-width: 650px) {
+        padding: 0px 10px 30px 10px;
+    }
+    padding: 0px 30px 30px 60px;
+}
+
+.userRole{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap:wrap;
+    padding:10px 20px;
+}
+
+.handle{
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-size: 1.2em;
+    font-style: italic;
+    color: #777777;
+}
