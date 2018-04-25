@@ -22,9 +22,7 @@ Editors:
 
 Insta-admin uses a number of open source projects and one paid theme to work properly:
 
-* ~~[AngularJS] - HTML enhanced for web apps!~~
 * [Ace Editor] - awesome web-based text editor
-* ~~[Angular Material](https://material.angularjs.org/latest/) - Google Material design with angular js~~
 * [React](https://reactjs.org/) - A javascript library for building user interfaces
 * [React-Toolbox](http://react-toolbox.io/) - Bootstrap react with Material Design
 * [Javascript Infovis Toolkit](https://philogb.github.io/jit/) - Awesome data visualization tool for data tree structures
