@@ -19,7 +19,7 @@ Editors:
   - Input validation to prevent incorrect data entries.
 
 ### Stack
-
+ 
 Insta-admin uses a number of open source projects and one paid theme to work properly:
 
 * [Ace Editor] - awesome web-based text editor
